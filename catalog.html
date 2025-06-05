@@ -2147,11 +2147,11 @@
       <script>
         const $catalogMap = $('#catalog-map');
         const $locationMap = $('#location-map');
-        // const $addressMap = $('#address-map');
+        const $contactsMap = $('#contacts-map');
 
         if ($catalogMap.length > 0) ymaps.ready(init);
         if ($locationMap.length > 0) ymaps.ready(initLocation);
-        // if ($addressMap.length > 0) ymaps.ready(initMap);
+        if ($contactsMap.length > 0) ymaps.ready(initContacts);
 
         let marks = [
           {
@@ -2254,6 +2254,44 @@
                   </picture>
                 </div>
                 <div class="location-balloon__title">Аренда офиса, 1-18 этаж - На Масловке</div>
+              </div>
+            `,
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: './img/content/map-mark.svg',
+            iconImageSize: [36, 36],
+            iconImageOffset: [-18, -36],
+            balloonPanelMaxMapArea: 0,
+            hideIconOnBalloonOpen: false,
+            balloonOffset: [-72, -32],
+            ballooncloseButton: false
+          });
+
+          myMap.geoObjects.add(myPlacemark),
+            myMap.behaviors.disable('scrollZoom'),
+            myPlacemark.balloon.open();
+        }
+
+        function initContacts() {
+          var myMap = new ymaps.Map('contacts-map', {
+            center: [55.755892, 37.617188],
+            zoom: 13,
+            controls: ['zoomControl']
+          }),
+
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          );
+
+          myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: `Большая Посадская улица, д. 12, оф. 403 `,
+            balloonContent: `
+              <div class="location-balloon">
+                <div class="location-balloon__img">
+                  <picture>
+                    <img src="./img/content/card-2.jpg" width="240" height="170" alt="img">
+                  </picture>
+                </div>
               </div>
             `,
           }, {
