@@ -4544,6 +4544,11 @@ textarea.visually-hidden {
     stroke: #0B6637;
   }
 
+  .header .logo {
+    width: 210px;
+    height: auto;
+  }
+
   .nav__link:hover {
     color: #DDB44C;
   }
