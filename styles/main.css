@@ -1521,11 +1521,6 @@ textarea {
   cursor: pointer;
 }
 
-.range-slider .noUi-handle.noUi-active {
-  box-shadow: none !important;
-  inset: unset !important;
-}
-
 .range-slider .noUi-handle::before,
 .range-slider .noUi-handle::after {
   content: none;
@@ -6764,7 +6759,6 @@ textarea {
   .filter__content {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 16px;
-    overflow: hidden;
   }
 
   .filter__item-group .labels {
