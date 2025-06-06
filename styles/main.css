@@ -1528,12 +1528,14 @@ textarea {
 }
 
 .range-slider .noUi-target {
-  -webkit-transform-style: preserve-3d;
+  transform-style: flat;
+  -webkit-transform-style: flat;
   -webkit-backface-visibility: hidden;
 }
 
 .range-slider .noUi-target * {
-  -webkit-transform-style: preserve-3d;
+  transform-style: flat;
+  -webkit-transform-style: flat;
   -webkit-backface-visibility: hidden;
 }
 
