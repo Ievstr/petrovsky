@@ -1458,7 +1458,6 @@ textarea {
   align-items: center;
   gap: 4px;
   padding-left: 15px;
-  z-index: unset;
 }
 
 .range .label:first-child::after {
@@ -1491,11 +1490,11 @@ textarea {
   left: 22px;
   right: 22px;
   height: 2px;
-  background: red;
+  background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .range-slider.noUi-state-drag .noUi-connect {
@@ -1518,7 +1517,6 @@ textarea {
   background: #282828;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
   cursor: pointer;
 }
 
@@ -1527,16 +1525,8 @@ textarea {
   content: none;
 }
 
-.range-slider .noUi-target {
-  transform-style: flat;
-  -webkit-transform-style: flat;
-  -webkit-backface-visibility: hidden;
-}
-
-.range-slider .noUi-target * {
-  transform-style: flat;
-  -webkit-transform-style: flat;
-  -webkit-backface-visibility: hidden;
+.range-slider .noUi-active {
+  box-shadow: none;
 }
 
 .search input {
