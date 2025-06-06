@@ -1497,19 +1497,19 @@ textarea {
   z-index: 1;
 }
 
-.range-slider.noUi-state-drag .noUi-connect {
+.noUi-state-drag .noUi-connect {
   background-color: #0B8C4A;
 }
 
-.range-slider.noUi-state-drag .noUi-handle {
+.noUi-state-drag .noUi-handle {
   background: #0B8C4A;
 }
 
-.range-slider .noUi-connect {
+.noUi-connect {
   background-color: #282828;
 }
 
-.range-slider .noUi-handle {
+.noUi-handle {
   width: 12px;
   height: 12px;
   top: -5px;
@@ -1521,16 +1521,16 @@ textarea {
   cursor: pointer;
 }
 
-.range-slider .noUi-handle::before,
-.range-slider .noUi-handle::after {
+.noUi-handle::before,
+.noUi-handle::after {
   content: none;
 }
 
-.range-slider .noUi-active {
+.noUi-active {
   box-shadow: none !important;
 }
 
-.range-slider .noUi-target {
+.noUi-target {
   box-shadow: none !important;
 }
 
