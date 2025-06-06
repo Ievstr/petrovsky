@@ -1497,6 +1497,14 @@ textarea {
   z-index: 2;
 }
 
+.range-slider.noUi-state-drag .noUi-connect {
+  background-color: #0B8C4A;
+}
+
+.range-slider.noUi-state-drag .noUi-handle {
+  background: #0B8C4A;
+}
+
 .range-slider .noUi-connect {
   background-color: #282828;
 }
@@ -1511,6 +1519,11 @@ textarea {
   border-radius: 50%;
   box-shadow: none;
   cursor: pointer;
+}
+
+.range-slider .noUi-handle.noUi-active {
+  box-shadow: none !important;
+  inset: unset !important;
 }
 
 .range-slider .noUi-handle::before,
