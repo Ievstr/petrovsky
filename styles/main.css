@@ -1497,19 +1497,19 @@ textarea {
   z-index: 1;
 }
 
-.noUi-state-drag .noUi-connect {
+.range-slider.noUi-state-drag .noUi-connect {
   background-color: #0B8C4A;
 }
 
-.noUi-state-drag .noUi-handle {
+.range-slider.noUi-state-drag .noUi-handle {
   background: #0B8C4A;
 }
 
-.noUi-connect {
+.range-slider .noUi-connect {
   background-color: #282828;
 }
 
-.noUi-handle {
+.range-slider .noUi-handle {
   width: 12px;
   height: 12px;
   top: -5px;
@@ -1521,17 +1521,9 @@ textarea {
   cursor: pointer;
 }
 
-.noUi-handle::before,
-.noUi-handle::after {
+.range-slider .noUi-handle::before,
+.range-slider .noUi-handle::after {
   content: none;
-}
-
-.noUi-active {
-  box-shadow: none !important;
-}
-
-.noUi-target {
-  box-shadow: none !important;
 }
 
 .search input {
@@ -6607,7 +6599,6 @@ textarea {
   }
 
   .filter__item_price {
-    order: 1;
     grid-column: span 2;
   }
 
