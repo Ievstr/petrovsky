@@ -1526,6 +1526,12 @@ textarea {
   content: none;
 }
 
+.noUi-target,
+.noUi-target * {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
 .search input {
   padding-left: 43px;
 }
