@@ -1497,14 +1497,6 @@ textarea {
   z-index: 2;
 }
 
-.range-slider.noUi-state-drag .noUi-connect {
-  background-color: #0B8C4A;
-}
-
-.range-slider.noUi-state-drag .noUi-handle {
-  background: #0B8C4A;
-}
-
 .range-slider .noUi-connect {
   background-color: #282828;
 }
