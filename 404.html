@@ -148,7 +148,7 @@
     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
   </ul>
 </nav>
-        <a href="#" class="header__button button button_white">Получить консультацию</a>
+        <a href="#popup" class="header__button button button_white js-popup-up">Получить консультацию</a>
       </div>
 
       <div class="burger js-burger">
@@ -305,7 +305,487 @@
     </div>
   </div>
 </footer>
-    
+    <div class="popup" id="popup">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__close js-popup-close">
+				<svg width="14" height="14">
+					<use xlink:href="./img/sprites/sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="popup__heading">
+				<h3 class="popup__title">Оставить заявку</h3>
+				<div class="popup__description">
+					<p>Укажите свой e-mail и телефон, чтобы мы могли с вами связаться в ближайшее время.</p>
+				</div>
+			</div>
+			<div class="popup__filter">
+				<div class="popup__filter-title">Как вам удобнее общаться?</div>
+				<div class="tab">
+					<div class="tab__inner">
+						<a href="#" class="tab__item tab__item_active">Звонок</a>
+						<a href="#" class="tab__item">WhatsApp</a>
+						<a href="#" class="tab__item">Telegram</a>
+						<a href="#" class="tab__item">Эл.почта</a>
+					</div>
+				</div>
+				<div class="select2-block select2-block_active">
+					<select class="select2 js-select2" data-placeholder="Сортировка">
+						<option></option>
+						<option value="1" selected>Звонок</option>
+						<option value="2">WhatsApp</option>
+						<option value="3">Telegram</option>
+						<option value="4">Эл.почта</option>
+					</select>
+				</div>
+			</div>
+			<form action="#" class="form">
+				<div class="form__content">
+					<label class="label">
+						<input type="text" placeholder="ФИО" required>
+					</label>
+					<label class="label">
+						<input type="tel" placeholder="+7 (•••) ••• – •• – ••" required>
+					</label>
+					<label class="label">
+						<textarea placeholder="Комментарий"></textarea>
+					</label>
+					<div class="file">
+  <label class="file__label">
+    <input type="file" class="visually-hidden js-input-file">
+    <span class="file__icon">
+      <svg width="20" height="20">
+        <use xlink:href="./img/sprites/sprite.svg#paperclip"></use>
+      </svg>
+    </span>
+    <span class="file__title">Прикрепите файл</span>
+  </label>
+  <div class="file__text">
+    <span class="file__icon">
+      <svg width="20" height="20">
+        <use xlink:href="./img/sprites/sprite.svg#paperclip"></use>
+      </svg>
+    </span>
+    <span class="file__name"></span>
+    <a href="#" class="file__delete js-input-file-delete">
+      <svg width="14" height="14">
+        <use xlink:href="./img/sprites/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+					<button class="form__button button">Оставить заявку</button>
+				</div>
+				<div class="form__privacy">
+					Нажимая на кнопку, Вы соглашаетесь с <a href="#">Положением об обработке персональных данных «Петровский строитель»</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup-service">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__close js-popup-close">
+				<svg width="14" height="14">
+					<use xlink:href="./img/sprites/sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="popup__heading">
+				<h3 class="popup__title">Заказать услугу</h3>
+				<div class="popup__description">
+					<p>Укажите свой e-mail и телефон, чтобы мы могли с вами связаться в ближайшее время.</p>
+				</div>
+			</div>
+			<div class="popup__filter">
+				<div class="popup__filter-title">Как вам удобнее общаться?</div>
+				<div class="tab">
+					<div class="tab__inner">
+						<a href="#" class="tab__item tab__item_active">Звонок</a>
+						<a href="#" class="tab__item">WhatsApp</a>
+						<a href="#" class="tab__item">Telegram</a>
+						<a href="#" class="tab__item">Эл.почта</a>
+					</div>
+				</div>
+				<div class="select2-block select2-block_active">
+					<select class="select2 js-select2" data-placeholder="Сортировка">
+						<option></option>
+						<option value="1" selected>Звонок</option>
+						<option value="2">WhatsApp</option>
+						<option value="3">Telegram</option>
+						<option value="4">Эл.почта</option>
+					</select>
+				</div>
+			</div>
+			<form action="#" class="form">
+				<div class="form__content">
+					<label class="label label_disabled">
+						<input type="text" placeholder="ФИО" value="Оценка" required>
+					</label>
+					<label class="label">
+						<input type="text" placeholder="ФИО" required>
+					</label>
+					<label class="label">
+						<input type="tel" placeholder="+7 (•••) ••• – •• – ••" required>
+					</label>
+					<button class="form__button button">Заказать услугу</button>
+				</div>
+				<div class="form__privacy">
+					Нажимая на кнопку, Вы соглашаетесь с <a href="#">Положением об обработке персональных данных «Петровский строитель»</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup-report">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__close js-popup-close">
+				<svg width="14" height="14">
+					<use xlink:href="./img/sprites/sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="popup__heading">
+				<h3 class="popup__title">Заказать отчет</h3>
+				<div class="popup__description">
+					<p>Укажите свой e-mail и телефон, чтобы мы могли с вами связаться в ближайшее время.</p>
+				</div>
+			</div>
+			<div class="popup__filter">
+				<div class="popup__filter-title">Как вам удобнее общаться?</div>
+				<div class="tab">
+					<div class="tab__inner">
+						<a href="#" class="tab__item tab__item_active">Звонок</a>
+						<a href="#" class="tab__item">WhatsApp</a>
+						<a href="#" class="tab__item">Telegram</a>
+						<a href="#" class="tab__item">Эл.почта</a>
+					</div>
+				</div>
+				<div class="select2-block select2-block_active">
+					<select class="select2 js-select2" data-placeholder="Сортировка">
+						<option></option>
+						<option value="1" selected>Звонок</option>
+						<option value="2">WhatsApp</option>
+						<option value="3">Telegram</option>
+						<option value="4">Эл.почта</option>
+					</select>
+				</div>
+			</div>
+			<form action="#" class="form">
+				<div class="form__content">
+					<div class="select2-block select2-block_active">
+						<select class="select2 js-select2" data-placeholder="Сортировка">
+							<option></option>
+							<option value="1" selected>Рынок недвижимости</option>
+							<option value="2">Рынок 2</option>
+							<option value="3">Рынок 3</option>
+						</select>
+					</div>
+					<div class="select2-block select2-block_active">
+						<select class="select2 js-select2" data-placeholder="Сортировка">
+							<option></option>
+							<option value="1" selected>
+								Анализ динамики цен, спроса и предложения на рынке жилой, коммерческой и индустриальной недвижимости
+							</option>
+							<option value="2">Анализ 2</option>
+							<option value="2">Анализ 3</option>
+						</select>
+					</div>
+					<label class="label">
+						<input type="text" placeholder="ФИО" required>
+					</label>
+					<label class="label">
+						<input type="tel" placeholder="+7 (•••) ••• – •• – ••" required>
+					</label>
+					<label class="label">
+						<textarea placeholder="Комментарий"></textarea>
+					</label>
+					<button class="form__button button">Заказать отчет</button>
+				</div>
+				<div class="form__privacy">
+					Нажимая на кнопку, Вы соглашаетесь с <a href="#">Положением об обработке персональных данных «Петровский строитель»</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_sent" id="popup-sent">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__close js-popup-close">
+				<svg width="14" height="14">
+					<use xlink:href="./img/sprites/sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="popup__heading">
+				<h3 class="popup__title">Заявка успешно отправлена</h3>
+				<div class="popup__description">
+					<p>Менеджер свяжется с вами в ближайшее время</p>
+				</div>
+			</div>
+			<a href="#" class="popup__button button js-popup-close">хорошо</a>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_member" id="popup-member">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__close js-popup-close">
+				<svg width="14" height="14">
+					<use xlink:href="./img/sprites/sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="popup__member">
+				<div class="popup__member-photo">
+					<picture>
+						<source srcset="./img/content/team-1.webp" type="image/webp">
+						<img src="./img/content/team-1.jpg" width="332" height="350" alt="img" loading="lazy">
+					</picture>
+				</div>
+				<div class="popup__member-text">
+					<div class="popup__member-title">Бедовый Александр Сергеевич</div>
+					<div class="popup__member-block">
+						<div class="popup__member-subtitle">Должность:</div>
+						<div class="popup__member-description">
+							<p>Управляющий партнер</p>
+						</div>
+					</div>
+					<div class="popup__member-block">
+						<div class="popup__member-subtitle">Опыт:</div>
+						<div class="popup__member-description">
+							<p>
+								В 2012 году окончил Международный университет в г. Москва по специальности управление производственным предприятием.
+							</p>
+							<p>
+								В период с 2002 по 2013 год работал в LSR Group на должностях начальника строительного участка, руководителя управления продаж, коммерческого директора.
+							</p>
+							<p>
+								В период с 2014 по 2024 управлял масштабными инвестиционными проектами при взаимодействии со следующими инвесторами: Банкирский Дом, Банк Санкт-Петербург, Сбербанк, Мегалайн, Эталон.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_location" id="popup-location">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__close js-popup-close">
+				<svg width="14" height="14">
+					<use xlink:href="./img/sprites/sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="popup__location">
+				<div class="popup__location-heading">
+					<div class="popup__location-hero">
+						<div class="tab">
+							<div class="tab__inner">
+								<a href="#" class="tab__item js-popup-location-item tab__item_active" data-tab="1">Расположение</a>
+								<a href="#" class="tab__item js-popup-location-item" data-tab="2">Метро</a>
+							</div>
+						</div>
+						<div class="search">
+  <div class="search__content">
+    <label class="label">
+      <input type="search" placeholder="Поиск">
+      <span class="search__img">
+        <svg width="20" height="20">
+          <use xlink:href="./img/sprites/sprite.svg#search"></use>
+        </svg>
+      </span>
+    </label>
+  </div>
+</div>
+					</div>
+					<div class="popup__location-subtitle">Город</div>
+					<div class="popup__location-group">
+						<label class="label label_checkbox">
+							<input type="radio" class="visually-hidden" name="city">
+							<span class="label__box"></span>
+							<span class="label__text">Москва</span>
+						</label>
+						<label class="label label_checkbox">
+							<input type="radio" class="visually-hidden" name="city" checked>
+							<span class="label__box"></span>
+							<span class="label__text">Санкт-Петербург</span>
+						</label>
+					</div>
+				</div>
+				<div class="popup__location-body js-popup-location-body popup__location-body_active" data-tab="1">
+					<div class="popup__location-subtitle">Район Санкт-Петербурга</div>
+					<div class="popup__location-block">
+						<div class="popup__location-letter">А</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Адмиралтейский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">В</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Василеостровский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Выборгский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">К</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Калининский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Кировский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Красногвардейский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Красносельский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">М</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Московский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">Н</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Невский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">П</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Петроградский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Приморский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">Ц</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Центральный</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="popup__location-body js-popup-location-body" data-tab="2">
+					<div class="popup__location-subtitle">Метро</div>
+					<div class="popup__location-block">
+						<div class="popup__location-letter">А</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Адмиралтейский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">В</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Василеостровский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Выборгский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">М</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Московский</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__location-block">
+						<div class="popup__location-letter">П</div>
+						<div class="popup__location-group">
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Петроградский</span>
+							</label>
+							<label class="label label_checkbox">
+								<input type="checkbox" class="visually-hidden">
+								<span class="label__box"></span>
+								<span class="label__text">Приморский</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="popup__location-buttons">
+					<a href="#" class="popup__location-button button">Применить</a>
+					<a href="#" class="popup__location-button button button_border">Сбросить выбор</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
     
 
     <script src="./libs/jquery-3.5.1.min.js"></script>
