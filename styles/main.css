@@ -1451,6 +1451,7 @@ textarea {
   width: 100%;
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .range .label {
@@ -1485,10 +1486,8 @@ textarea {
 }
 
 .range-slider {
-  position: absolute;
-  bottom: 0;
-  left: 22px;
-  right: 22px;
+  width: calc(100% - 44px);
+  margin-left: 22px;
   height: 2px;
   background: transparent;
   border: none;
