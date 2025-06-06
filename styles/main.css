@@ -6599,6 +6599,7 @@ textarea {
   }
 
   .filter__item_price {
+    order: 1;
     grid-column: span 2;
   }
 
